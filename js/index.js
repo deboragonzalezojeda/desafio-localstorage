@@ -3,7 +3,7 @@ let input = document.getElementById('inputText');
 let datos;
 
 document.addEventListener('DOMContentLoaded', function() {
-    if(localStorage.datos) {
+    if(localStorage.datos != null) {
         datos = JSON.parse(localStorage.datos);
         console.log(datos);
     } else {
